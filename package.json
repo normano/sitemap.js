@@ -1,18 +1,18 @@
 {
   "name": "@excsn/sitemap",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "Sitemap-generating lib/cli",
   "keywords": [
     "sitemap",
     "sitemap.xml"
   ],
-  "homepage": "https://github.com/ekalinin/sitemap.js#readme",
+  "homepage": "https://github.com/normano/sitemap.js#readme",
   "bugs": {
-    "url": "https://github.com/ekalinin/sitemap.js/issues"
+    "url": "https://github.com/normano/sitemap.js/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ekalinin/sitemap.js.git"
+    "url": "git://github.com/normano/sitemap.js.git"
   },
   "license": "MIT",
   "author": "Eugene Kalinin <e.v.kalinin@gmail.com>",
@@ -49,13 +49,6 @@
       "jest": true,
       "node": true
     },
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier/@typescript-eslint",
-      "plugin:prettier/recommended"
-    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "ecmaVersion": 2018,
@@ -65,12 +58,15 @@
       "jest",
       "@typescript-eslint"
     ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
     "rules": {
-      "no-case-declarations": 0,
-      "no-console": 0,
-      "no-unused-vars": 0,
       "indent": "off",
-      "no-dupe-class-members": "off",
       "lines-between-class-members": [
         "error",
         "always",
@@ -78,6 +74,10 @@
           "exceptAfterSingleLine": true
         }
       ],
+      "no-case-declarations": 0,
+      "no-console": 0,
+      "no-dupe-class-members": "off",
+      "no-unused-vars": 0,
       "padding-line-between-statements": [
         "error",
         {
@@ -86,17 +86,17 @@
           "next": "multiline-expression"
         }
       ],
+      "@typescript-eslint/explicit-member-accessibility": "off",
+      "@typescript-eslint/interface-name-prefix": [
+        2,
+        "always"
+      ],
       "@typescript-eslint/no-parameter-properties": "off",
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
           "args": "none"
         }
-      ],
-      "@typescript-eslint/explicit-member-accessibility": "off",
-      "@typescript-eslint/interface-name-prefix": [
-        2,
-        "always"
       ]
     }
   },
@@ -155,5 +155,6 @@
     "node": ">=10.0.0",
     "npm": ">=5.6.0"
   },
-  "License": "MIT"
+  "License": "MIT",
+  "registry": "https://registry.npmjs.org/"
 }
