@@ -19,7 +19,7 @@ makes creating [sitemap XML](http://www.sitemaps.org/) files easy.
   - [Building just the sitemap index file](#building-just-the-sitemap-index-file)
   - [Auto creating sitemap and index files from one large list](#auto-creating-sitemap-and-index-files-from-one-large-list)
 - [API](#api)
-  - [Sitemap (deprecated)](#sitemap---deprecated)
+  - [Sitemap](#sitemap)
   - [buildSitemapIndex](#buildsitemapindex)
   - [createSitemapsAndIndex](#createsitemapsandindex)
   - [xmlLint](#xmllint)
@@ -289,7 +289,7 @@ const smi = createSitemapsAndIndex({
 
 ## API
 
-### Sitemap - __deprecated__
+### Sitemap
 
 ```js
 const { Sitemap } = require('sitemap')
